@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    
+    <header class="app-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Ѳmega AI" class="logo">
+           
+        </div>
+         <div class="chatbot-name">
+        <h1>Ω𝑴𝑬𝑮𝑨 𝑨𝑰</h1>
+    </div>
+    <div class="header-controls">
+        <button id="newChatButton" class="icon-button" title="New chat">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button id="historyToggle" class="icon-button" title="Chat history">
+            <i class="fas fa-history"></i>
+        </button>
+        <button id="themeToggle" class="icon-button" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    </header>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-center">
+            <img src="logo.png" alt="@mega AI" class="chat-logo">
+            <h1></h1>
+            <!--<img src="logo.png" alt="Ѳmega AI" class="logo">--> 
+        </div>
+        </div>
+        <div class="chat-history" id="chatHistory">
+            <div class="history-header">
+                <h3>Chat History</h3>
+                <div class="history-actions">
+                    <button id="deleteAllChats" class="icon-button danger" title="Delete all chats">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    <button id="closeHistory" class="icon-button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="history-items" id="historyItems">
+                <div class="empty-history">No previous chats yet</div>
+            </div>
+        </div>
+        
+        <div class="chat-box" id="chatBox">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+            <button id="sendButton">
+                <i class="fas fa-share"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
